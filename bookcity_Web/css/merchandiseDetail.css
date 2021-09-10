@@ -1,0 +1,22 @@
+.merchandiseDetail-wrap {
+    width: 96%;
+    margin: auto;
+}
+.merchandiseDetail-wrap img {
+    margin-left: 5px;
+}
+
+.detail img {
+    float: left;
+}
+
+.buy {
+    text-align: center;
+    margin-top: 20px;
+}
+.buy button {
+    background: url("../resources/images/icon_buy.gif");
+    width: 62px;
+    height: 25px;
+    border: none;
+}

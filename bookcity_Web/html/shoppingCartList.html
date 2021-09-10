@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车列表</title>
+    <link type="text/css" rel="stylesheet" href="/css/base.css">
+    <link type="text/css" rel="stylesheet" href="/css/shoppingCart.css">
+    <link type="text/css" rel="stylesheet" href="/css/shoppingCartList.css">
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    <script src="/js/base.js"></script>
+</head>
+<body>
+<div id="container">
+    <div class="header">
+
+    </div>
+    <div class="menu">
+
+    </div>
+    <div class="main">
+        <div class="cart-wrap">
+            <img src="/resources/images/Car_icon_04.gif">
+            <div class="cartStatus">
+                <img src="/resources/images/Car_07.gif">
+                <span class="selected">查看购物车物品</span>
+                <img src="/resources/images/Car_15.gif" class="img-divide">
+                <img src="/resources/images/Car_09.gif">
+                <span>确认订单信息</span>
+                <img src="/resources/images/Car_15.gif" class="img-divide">
+                <img src="/resources/images/Car_11.gif">
+                <span>订单提交成功</span>
+                <img src="/resources/images/Car_15.gif" class="img-divide">
+            </div>
+            <table>
+                <tr class="bg">
+                    <th>商品名称</th>
+                    <th>市场价</th>
+                    <th>会员价</th>
+                    <th>数量</th>
+                    <th>金额</th>
+                    <th>删除</th>
+                </tr>
+                <tr>
+                    <td><a>指环王:双塔奇兵</a></td>
+                    <td>￥128</td>
+                    <td>￥89.6</td>
+                    <td>
+                        <input type="text" align="center" name="num" value="1">
+                    </td>
+                    <td>￥89.6</td>
+                    <td><img src="/resources/images/delete_01.gif"></td>
+                </tr>
+                <tr class="bg">
+                    <td colspan="6">
+                        <img src="/resources/images/me03.gif">
+                        <span>总金额: ￥89.6 (不包含配送费用)</span>
+                    </td>
+                </tr>
+            </table>
+            <div class="operation">
+                <button class="empty"></button>
+                <button class="keep_shopping"></button>
+                <button class="next_step"></button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,38 @@
+.cart-wrap table{
+    width: 100%;
+    border-spacing: 0px;
+    text-align: center;
+}
+.cart-wrap table th {
+    padding: 10px 0px;
+}
+.cart-wrap table td {
+    border: 1px solid #F8F3F7;
+    padding: 10px 0px;
+}
+.cart-wrap table td input {
+    width: 50px;
+}
+.cart-wrap .operation {
+    margin-top: 10px;
+    text-align: right;
+}
+.cart-wrap .operation .empty {
+    border: none;
+    background-image: url("../resources/images/Car_icon_01.gif");
+    width: 126px;
+    height: 39px;
+}
+.cart-wrap .operation .keep_shopping {
+    border: none;
+    background-image: url("../resources/images/Car_icon_02.gif");
+    width: 137px;
+    height: 40px;
+}
+.cart-wrap .operation .next_step {
+    border: none;
+    background-image: url("../resources/images/Car_icon_03.gif");
+    width: 137px;
+    height: 40px;
+}
+

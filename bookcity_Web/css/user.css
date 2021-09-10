@@ -1,0 +1,47 @@
+.user-wrap {
+    width: 96%;
+    margin: auto;
+}
+.user-wrap img {
+    margin-left: 5px;
+}
+.user-wrap table {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.user-wrap #userTable {
+    border-spacing: 0px;
+}
+.user-wrap #userTable td {
+    border: 1px solid white;
+    padding: 10px 0px 10px 10px;
+}
+.user-wrap #userTable .left {
+    width: 40%;
+    text-align: right;
+}
+.user-wrap input {
+    width: 350px;
+    height: 25px;
+}
+
+.user-wrap #save {
+    text-align: center;
+    margin-top: 20px;
+}
+.user-wrap #save button {
+    background: url("../resources/images/button2.gif");
+    width: 73px;
+    height: 23px;
+    border: none;
+    line-height: 20px;
+    letter-spacing: 5px;
+    font-size: 15px;
+    text-align: center;
+    display: inline-block;
+}
+.user-wrap #save button:hover {
+    color: gray;
+}
+

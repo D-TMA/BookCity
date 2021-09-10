@@ -1,0 +1,33 @@
+.cart-wrap {
+    width: 96%;
+    margin: auto;
+}
+.cart-wrap img {
+    margin-left: 5px;
+}
+.cart-wrap .cartStatus {
+    height: 55px;
+}
+.cart-wrap .cartStatus img {
+    float: left;
+    margin-right: 40px;
+}
+.cart-wrap .cartStatus span {
+    float: left;
+    margin-top: 20px;
+    margin-right: 40px;
+    width: 119px;
+    height: 21px;
+    font-size: 13px;
+    text-align: center;
+    padding-top: 2px;
+    line-height: 20px;
+    background: url("../resources/images/Car_21.gif");
+}
+.cart-wrap .cartStatus .selected {
+    background: url("../resources/images/Car_18.gif");
+    color: white;
+}
+.cart-wrap .cartStatus .img-divide {
+    margin-top: 12px;
+}

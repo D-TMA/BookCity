@@ -1,0 +1,28 @@
+.merchandiseList-wrap {
+    width: 96%;
+    margin: auto;
+}
+.merchandiseList-wrap .top_div {
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.merchandiseList-wrap .top_div img {
+    margin-left: 5px;
+}
+.merchandiseList-wrap table {
+    text-align: center;
+    padding: 0px;
+}
+.merchandiseList-wrap table .img {
+    width: 20%;
+}
+.merchandiseList-wrap table .description {
+    width: 40%;
+}
+.merchandiseList-wrap table img {
+    padding-top: 20px;
+}
+.merchandiseList-wrap table .divide {
+    height: 5px;
+    background: #F8F3F7;
+}

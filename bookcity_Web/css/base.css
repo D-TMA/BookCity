@@ -1,0 +1,80 @@
+body {
+    margin: 0px;
+}
+.bg {
+    background-color: #F8F3F7;
+}
+.font-red {
+    color: red;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+#container {
+    width: 80%;
+    margin: auto;
+    border: 1px solid;
+}
+
+.header {
+    height: 150px;
+    width: 100%;
+}
+.header .search-wrap{
+    width: 28%;
+    height: 35px;
+    float: right;
+    margin-top: 100px;
+}
+.header .search-wrap .search-content {
+    float: left;
+    margin-left: 10px;
+}
+
+.menu {
+    height: 36px;
+    width: 96%;
+    margin: auto;
+    border-radius: 5px;
+    background: url("../resources/images/header_menu_02.gif");
+}
+.menu ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    width: 88%;
+    margin: auto;
+}
+.menu ul li {
+    float: left;
+    margin-left: 55px;
+    line-height: 36px;
+}
+.menu ul li a {
+    text-decoration: none;
+    margin-left: 35px;
+    font-size: 27px;
+    color: white;
+}
+.menu ul li a:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+.main {
+    width: 100%;
+    padding: 20px 0px;
+}
+.footer {
+    height: 55px;
+    width: 96%;
+    margin: auto;
+    background-color: #6295D4;
+    font-size: 22px;
+    text-align: center;
+    line-height: 55px;
+    color: white;
+}

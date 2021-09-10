@@ -1,0 +1,33 @@
+.cart-wrap table{
+    width: 100%;
+    border-spacing: 0px;
+}
+.cart-wrap table td {
+    border: 1px solid white;
+    padding-left: 5px;
+    height: 30px;
+}
+.cart-wrap table .left {
+    width: 40%;
+    text-align: right;
+}
+.cart-wrap table td input {
+    width: 300px;
+}
+.cart-wrap .operation {
+    text-align: center;
+    margin-top: 20px;
+}
+.cart-wrap .operation .return {
+    border: none;
+    background-image: url("../resources/images/Car_icon_back.gif");
+    width: 137px;
+    height: 40px;
+}
+.cart-wrap .operation .submit {
+    border: none;
+    background-image: url("../resources/images/Car_icon_06.gif");
+    width: 137px;
+    height: 40px;
+}
+

@@ -1,0 +1,25 @@
+.orderList-wrap {
+    width: 96%;
+    margin: auto;
+}
+.orderList-wrap img {
+    margin-left: 5px;
+}
+.orderList-wrap table {
+    width: 100%;
+    border-spacing: 0px;
+    text-align: center;
+    border: 1px solid;
+    margin-top: 20px;
+}
+.orderList-wrap table th {
+    padding: 10px 0px;
+}
+.orderList-wrap table td {
+    border: 1px solid #F8F3F7;
+    padding: 10px 0px;
+}
+
+.checkOrder {
+    margin-right: 30px;
+}

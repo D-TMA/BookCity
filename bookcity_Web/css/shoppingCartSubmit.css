@@ -1,0 +1,21 @@
+.cart-wrap table{
+    width: 100%;
+    border-spacing: 0px;
+}
+.cart-wrap table td {
+    border: 1px solid white;
+    padding-left: 5px;
+    height: 30px;
+}
+.cart-wrap table img {
+    width: 180px;
+    height: 180px;
+}
+.cart-wrap table .wbg {
+    background-color: white;
+    text-align: center;
+    width: 20%;
+}
+
+
+

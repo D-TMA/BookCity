@@ -1,0 +1,65 @@
+.leaveWord-wrap {
+    width: 96%;
+    margin: auto;
+}
+.leaveWord-wrap img {
+    margin-left: 5px;
+}
+
+.leaveWord-wrap .leaveWord {
+    border: 1px solid;
+    margin-top: 10px;
+}
+.leaveWord-wrap .leaveWord .leaveWord-info {
+    height: 30px;
+    line-height: 30px;
+    background-color: #F8F3F7;
+}
+.leaveWord-wrap .leaveWord .leaveWord-info .left {
+    float: left;
+}
+.leaveWord-wrap .leaveWord .leaveWord-info .right {
+    float: right;
+}
+
+.leaveWord-wrap .leaveWord .leaveWord-content {
+
+}
+.leaveWord-wrap .leaveWord .reply-info {
+    height: 30px;
+    line-height: 30px;
+    background-color: #F8F3F7;
+}
+.leaveWord-wrap .leaveWord .reply-content {
+
+}
+
+.leaveWord-wrap .messageBoard {
+    margin-top: 10px;
+}
+.leaveWord-wrap .messageBoard .title {
+    height: 30px;
+    padding-top: 10px;
+}
+.leaveWord-wrap .messageBoard .title input {
+    width: 90%;
+}
+.leaveWord-wrap .messageBoard .content {
+    padding-top: 5px;
+}
+.leaveWord-wrap .messageBoard .content .content-title {
+    float: left;
+}
+.leaveWord-wrap .messageBoard .content textarea {
+    width: 90%;
+}
+.leaveWord-wrap .messageBoard .save {
+    text-align: center;
+}
+.leaveWord-wrap .messageBoard .save button {
+    background: url("../resources/images/button2.gif");
+    width: 73px;
+    height: 23px;
+    border: none;
+    margin: 10px 0px 10px 0px;
+}

@@ -1,0 +1,44 @@
+.orderDetail-wrap {
+    width: 96%;
+    margin: auto;
+}
+.orderDetail-wrap img {
+    margin-left: 5px;
+}
+.orderDetail-wrap table {
+    width: 100%;
+    margin-top: 10px;
+}
+.orderDetail-wrap #orderTable {
+    border-spacing: 0px;
+}
+.orderDetail-wrap #orderTable td {
+    border: 1px solid white;
+    padding: 10px 0px;
+}
+.orderDetail-wrap #orderTable .left {
+    width: 40%;
+    text-align: right;
+}
+.orderDetail-wrap #detailTable {
+    text-align: center;
+    border-spacing: 0px;
+}
+.orderDetail-wrap #detailTable th {
+    padding: 10px 0px;
+}
+.orderDetail-wrap #detailTable td {
+    border: 1px solid #F8F3F7;
+    padding: 10px 0px;
+}
+.orderDetail-wrap #detailTable caption {
+    font-size: 24px;
+    padding: 0px 0px 10px 0px;
+    letter-spacing: 5px;
+}
+.orderDetail-wrap .back {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
