@@ -69,7 +69,10 @@ $(document).ready(function () {
     });
 });
 
-//初始化商品信息
+/**
+ * 初始化新品信息
+ * @param result
+ */
 function initMerchandiseList(result) {
     $("#new-merchandise").html("");
     $.each(result,function (index,element) {
@@ -88,6 +91,7 @@ function initMerchandiseList(result) {
         let img2 = $("<img>").attr("src","/resources/images/icon_car.gif");
         let img3 = $("<img>").attr("src","/resources/images/icon_buy.gif");
         img2.bind("click",element.id,getMerchandiseDetail);
+        img3.bind("click",element.id,addShoppingCart);
         img3.addClass("nm-img");
         div.append(img1,br1,a,br2,span1,br3,img2,img3);
         $("#new-merchandise").append(div);
@@ -107,7 +111,10 @@ function initCategoryList(result) {
     });
 }
 
-//初始化
+/**
+ * 初始化特价商品
+ * @param result
+ */
 function initSpecialMerchandiseList(result) {
     $("#special-merchandise").html("");
     $.each(result,function (index,element) {
@@ -127,14 +134,54 @@ function initSpecialMerchandiseList(result) {
         let img3 = $("<img>").attr("src","/resources/images/icon_buy.gif");
         img3.addClass("nm-img");
         img2.bind("click",element.id,getMerchandiseDetail);
+        img3.bind("click",element.id,addShoppingCart);
         div.append(img1,br1,a,br2,span1,br3,span2,br4,img2,img3);
         $("#special-merchandise").append(div);
     });
 }
 
+/**
+ * 获得商品详情
+ * @param event
+ */
 function getMerchandiseDetail(event) {
     let id = event.data;
     location.href = "/html/merchandiseDetail.html?id="+id;
+}
+
+/**
+ * 添加购物车
+ * @param event
+ */
+function addShoppingCart(event) {
+    let id = event.data;
+    let obj = new Object();
+    obj.m = "add";
+    obj.merId = id;
+    $.ajax({
+        async: true,
+        xhrFields: {
+            withCredentials: true
+        },
+        type: "POST",
+        url: basePath+"/api/auth/cart",
+        dataType: "json",
+        data: obj,
+        success: function (result) {
+            console.log(result);
+            if(result.code==505 || result.code==506){
+                // 跳转到请先进行登录页面
+                location.href="/html/notLoginView.html";
+            }else if(result.code==200){
+                // 登录成功
+                location.href="/html/shoppingCartList.html";
+            }
+        },
+        error: function (e) {
+            console.log(e.status);
+            console.log(e.responseText);
+        }
+    });
 }
 
 //登录

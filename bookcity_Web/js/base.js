@@ -15,6 +15,9 @@ function shoppingCartJumpLink() {
         //window.location.href = "html/shoppingCartConfirmation.html";
         $(location).attr("href","shoppingCartConfirmation.html");
     });
+    $(".keep_shopping").click(function () {
+        $(location).attr("href","../index.html");
+    })
     $(".return").click(function () {
         $(location).attr("href","shoppingCartList.html");
     });
@@ -52,7 +55,7 @@ function linkToShoppingCart() {
         //请求方式
         type: "POST",
         //请求地址
-        url: basePath + "/api/auth/cart2",
+        url: basePath + "/api/auth/cart",
         //数据，json字符串,
         //返回值的类型
         dataType: "json",
