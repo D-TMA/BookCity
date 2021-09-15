@@ -62,7 +62,6 @@ function linkToShoppingCart() {
         data: obj,
         //请求成功
         success: function (result) {
-            console.log('success......');
             console.log(result);
             if(result.code==505 || result.code==506){
                 // 跳转到请先进行登录页面
@@ -74,7 +73,44 @@ function linkToShoppingCart() {
         },
         //请求失败，包含具体的错误信息
         error: function (e) {
-            console.log('error......');
+            console.log(e.status);
+            console.log(e.responseText);
+        }
+    });
+}
+
+function linkToOrderList() {
+    let obj = new Object();
+    obj.m = "list";
+    //初始化商品类型列表
+    $.ajax({
+        //请求方式  同步 false  异步true
+        async: true,
+        // Ajax请求设置xhrFields的withCredentials为true实现跨域访问
+        xhrFields: {
+            withCredentials: true
+        },
+        //请求方式
+        type: "POST",
+        //请求地址
+        url: basePath + "/api/auth/orders",
+        //数据，json字符串,
+        //返回值的类型
+        dataType: "json",
+        data: obj,
+        //请求成功
+        success: function (result) {
+            console.log(result);
+            if(result.code==505 || result.code==506){
+                // 跳转到请先进行登录页面
+                location.href="/html/notLoginView.html";
+            }else if(result.code==200){
+                // 登录成功
+                location.href="/html/orderList.html";
+            }
+        },
+        //请求失败，包含具体的错误信息
+        error: function (e) {
             console.log(e.status);
             console.log(e.responseText);
         }
